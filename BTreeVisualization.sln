@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTreeVisualization.Logic", "BTreeVisualization.Logic\BTreeVisualization.Logic.csproj", "{AB126ADC-A4F7-47C8-B9A1-C993BC437DBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTreeVisualization.Presentation", "BTreeVisualization.Presentation\BTreeVisualization.Presentation.csproj", "{ACF2A8F7-1BB0-4D85-9CDE-CEAECB9CEA65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB126ADC-A4F7-47C8-B9A1-C993BC437DBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB126ADC-A4F7-47C8-B9A1-C993BC437DBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB126ADC-A4F7-47C8-B9A1-C993BC437DBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB126ADC-A4F7-47C8-B9A1-C993BC437DBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACF2A8F7-1BB0-4D85-9CDE-CEAECB9CEA65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACF2A8F7-1BB0-4D85-9CDE-CEAECB9CEA65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACF2A8F7-1BB0-4D85-9CDE-CEAECB9CEA65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACF2A8F7-1BB0-4D85-9CDE-CEAECB9CEA65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
