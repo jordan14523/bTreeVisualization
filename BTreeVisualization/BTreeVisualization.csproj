@@ -7,8 +7,8 @@
     <ProjectGuid>{ACF2A8F7-1BB0-4D85-9CDE-CEAECB9CEA65}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BTreeVisualization.Presentation</RootNamespace>
-    <AssemblyName>BTreeVisualization.Presentation</AssemblyName>
+    <RootNamespace>BTreeVisualization</RootNamespace>
+    <AssemblyName>BTreeVisualization</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Presentation\BTreeConsolePrinter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

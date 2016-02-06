@@ -1,13 +1,10 @@
 ﻿using BTreeVisualization.Logic;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+using static BTreeVisualization.Presentation.BTreeConsolePrinter;
 
-namespace BTreeVisualization.Presentation
+namespace BTreeVisualization
 {
     class Program
     {
@@ -81,46 +78,5 @@ namespace BTreeVisualization.Presentation
             Console.WriteLine("Successfully read into tree");
         }
 
-        private static string ReadFileInput(string path)
-        {
-            using (var reader = new StreamReader(path))
-            {
-                return reader.ReadLine();   
-            }
-        }
-
-        private static void PrintInputFormat()
-        {
-            Console.WriteLine("\n\nInput comma seperated integers. Ex: 234,33,343");
-        }
-
-        private static void PrintReadOptions()
-        {
-            Console.WriteLine("1 - Read from file");
-            Console.WriteLine("2 - Input to console");
-        }
-
-        private static void PrintExit()
-        {
-            Console.WriteLine("\nInput \"e\" or exit to exit.");
-        }
-
-        public static void PrintOutputOptions()
-        {
-            Console.WriteLine("1. Output to file");
-            Console.WriteLine("2. Output to console");
-        }
-
-        private static void PrintUnrecognized()
-        {
-            Console.WriteLine("Unrecognized option: Type in the number next to the option.");
-        }
-        private static void PrintHeader()
-        {
-            Console.WriteLine("\n\n====================================================================");
-            Console.WriteLine("BTree Presentation Application");
-            Console.WriteLine("Integer values supported only");
-            Console.WriteLine("Type in the number next to the desired option:");
-        }
     }
 }
