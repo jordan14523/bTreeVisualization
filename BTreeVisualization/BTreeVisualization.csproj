@@ -43,7 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Presentation\BTreeConsolePrinter.cs" />
+    <Compile Include="Logic\BTree.cs" />
+    <Compile Include="Logic\BTreeOperations.cs" />
+    <Compile Include="Presentation\BTreePrinter.cs" />
+    <Compile Include="Logic\BTreeReader.cs" />
+    <Compile Include="Presentation\BTreeMenuPrinter.cs" />
+    <Compile Include="Interfaces\IPrinter.cs" />
+    <Compile Include="Presentation\ConsolePrinter.cs" />
+    <Compile Include="Presentation\FilePrinter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -51,15 +58,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BTreeVisualization.Logic\BTreeVisualization.Logic.csproj">
-      <Project>{ab126adc-a4f7-47c8-b9a1-c993bc437dbf}</Project>
-      <Name>BTreeVisualization.Logic</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="output.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

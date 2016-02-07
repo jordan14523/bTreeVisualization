@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BTreeVisualization.Logic
 {
@@ -14,6 +10,11 @@ namespace BTreeVisualization.Logic
         public void Insert(T value)
         {
             Root = InsertValue(Root, value, 0);
+        }
+
+        public void ClearSelected()
+        {
+            TraversalFunc(Root, x => x.IsParent = x.IsSelected = false);
         }
 
         private BTreeNode<T> InsertValue(BTreeNode<T> node, T value, int level)
@@ -36,7 +37,21 @@ namespace BTreeVisualization.Logic
             }
 
             return node;
-        }        
+        }
+
+        private void TraversalFunc(BTreeNode<T> node, Action<BTreeNode<T>> ProcessNode)
+        {
+            if (node == null)
+            {
+                return;
+            }
+            else
+            {
+                ProcessNode(node);
+                TraversalFunc(node.Left, ProcessNode);
+                TraversalFunc(node.Right, ProcessNode);
+            }
+        }
     }
     public class BTreeNode<T> where T : IComparable
     {
@@ -56,4 +71,6 @@ namespace BTreeVisualization.Logic
             Level = level;
         }
     }
+
+    
 }
